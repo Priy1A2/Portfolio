@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { motion } from "framer-motion"
-import { Briefcase, Download, Github, Linkedin, Twitter, Code, BookOpen } from "lucide-react"
+import { Briefcase, Download, Github, Linkedin, Code, BookOpen } from "lucide-react"
 import Image from "next/image"
 import { useCallback } from "react"
 import type { Section } from "../Navigation"

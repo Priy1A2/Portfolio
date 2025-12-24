@@ -2,7 +2,7 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { GithubIcon, LinkedinIcon, MailIcon, TwitterIcon, SendHorizontal } from "lucide-react"
+import { GithubIcon, LinkedinIcon, MailIcon, SendHorizontal } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
 
