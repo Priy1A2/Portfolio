@@ -1,13 +1,11 @@
-
-
 export type Project = {
   id: number;
   title: string;
   description: string;
   techStack : string;
-  image: string;
+  image?: string;
   github: string;
-  live: string;
+  live?: string;
 } 
 
 type SkillCategory = 'Languages' | 'Frameworks & Libraries' | 'Technologies & Tools';
@@ -17,12 +15,17 @@ name: string;
 category: SkillCategory;
 }
 
-export type Experience = {
-  id: number;
-  title: string;
-  company: string;
-  period: string;
-  description: string;
+export interface Experience {
+  id: number
+  role: string
+  company: string
+  team?: string
+  location?: string
+  period: string
+  description: string
+  highlights?: string[]
+  image?: string
+  techStack?: string
 } 
 
 export type Education = {

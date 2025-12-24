@@ -63,8 +63,8 @@ const IntroSection = ({ setActiveSection, theme = "retro" }: IntroProps) => {
 
   const handleResumeDownload = useCallback(() => {
     const anchor = document.createElement("a")
-    anchor.href = "/resume.pdf"
-    anchor.download = "Yashaswi_Kumar_Mishra_Resume.pdf"
+    anchor.href = "/PriyaJain_IIITP_Resume.pdf"
+    anchor.download = "Priya_IIITP_Resume.pdf"
     document.body.appendChild(anchor)
     anchor.click()
     document.body.removeChild(anchor)
@@ -84,44 +84,42 @@ const IntroSection = ({ setActiveSection, theme = "retro" }: IntroProps) => {
             {/* Mobile Profile + Name */}
             <div className="flex items-center mb-6 lg:hidden">
               <div className="w-16 h-16 rounded-full overflow-hidden mr-4 flex-shrink-0">
-                <Image src="/profile.jpg" alt="Yashaswi" width={64} height={64} className="object-cover" priority />
+                <Image src="/profile.jpg" alt="Priya" width={64} height={64} className="object-cover" priority />
               </div>
-              <h1 className={`text-2xl sm:text-3xl font-bold ${styles.font}`}>Yashaswi Kumar Mishra</h1>
+              <h1 className={`text-2xl sm:text-3xl font-bold ${styles.font}`}>Priya Jain</h1>
             </div>
 
             {/* Large Name */}
             <motion.div variants={itemVariants} className="hidden lg:block">
               <h1 className={`text-4xl md:text-5xl font-bold mb-4 ${styles.font}`}>
-                Hey! I&apos;m <span className={`${styles.color}`}>Yashaswi Kumar Mishra</span>
+                Hey! I&apos;m <span className={`${styles.color}`}>Priya Jain</span>
               </h1>
             </motion.div>
 
             {/* Tagline */}
             <motion.div variants={itemVariants}>
               <h2 className={`text-xl sm:text-2xl mb-4 lg:mb-6 inline-block px-1 py-1 rounded ${styles.font} ${styles.color}`}>
-                Backend Developer
+                Fullstack Developer
               </h2>
             </motion.div>
 
             {/* Bio */}
             <motion.div variants={itemVariants}>
               <p className={`text-gray-300 text-base sm:text-lg mb-6 leading-relaxed ${styles.font}`}>
-                I build reliable backend systems with a focus on performance, scalability, and clean architecture. My work spans developer tools, infrastructure, and system design - driven by a deep curiosity for how things work under the hood.
-              </p>
+                I design and build scalable applications with a strong focus on performance, maintainability, and seamless user experience. My work ranges from full-stack and real-time systems to AI-assisted tools, backed by industry experience at Google. I’m deeply curious about how systems work end-to-end and enjoy tackling challenging problems through clean code and efficient design.              </p>
             </motion.div>
 
             <motion.div variants={itemVariants}>
               <p className={`text-gray-300 text-base sm:text-lg mb-8 leading-relaxed ${styles.font}`}>
-                I&apos;m comfortable across Go, Rust, and TypeScript - building structured, maintainable systems. Whether it&apos;s crafting APIs, working with distributed systems, or writing low-level logic, I bring a strong foundation and a hunger to learn fast and ship even faster.
-              </p>
+                I&apos;m comfortable working with C++, Python, and JavaScript, building clean and scalable full-stack applications. From real-time systems and backend APIs to improving UI/UX in production features at Google, I bring strong fundamentals, practical engineering experience, and a constant drive to learn and build better software.</p>
             </motion.div>
 
             {/* Social Links */}
             <motion.div variants={itemVariants} className="flex gap-4 mb-8">
               {([
-                ["twitter", "https://twitter.com/pixperk_", Twitter],
-                ["linkedin", "https://www.linkedin.com/in/yashaswi-kumar-mishra-459a53285", Linkedin],
-                ["github", "https://github.com/pixperk", Github]
+                // ["twitter", "https://twitter.com/pixperk_", Twitter],
+                ["linkedin", "https://www.linkedin.com/in/priya-jain-b4a511283/", Linkedin],
+                ["github", "https://github.com/Priy1A2", Github]
               ] as [string, string, React.ElementType][]).map(([name, url, Icon]) => (
                 <a key={name}
                   href={url}
@@ -137,17 +135,11 @@ const IntroSection = ({ setActiveSection, theme = "retro" }: IntroProps) => {
             {/* Explore Work CTA Buttons - Mobile */}
             <motion.div variants={itemVariants} className="lg:hidden space-y-3 mb-6">
               <div className="flex flex-wrap gap-3">
-                <Button 
+                <Button
                   className={`flex items-center px-5 py-2 rounded-full text-sm ${styles.secondaryBtn} ${styles.font}`}
                   onClick={() => handleSectionChange("projects")}
                 >
                   <Code className="mr-2 h-4 w-4" /> My Projects
-                </Button>
-                <Button 
-                  className={`flex items-center px-5 py-2 rounded-full text-sm ${styles.secondaryBtn} ${styles.font}`}
-                  onClick={() => handleSectionChange("blogs")}
-                >
-                  <BookOpen className="mr-2 h-4 w-4" /> Read My Blog
                 </Button>
               </div>
             </motion.div>
@@ -171,17 +163,11 @@ const IntroSection = ({ setActiveSection, theme = "retro" }: IntroProps) => {
 
             {/* Explore Work CTA Buttons - Desktop */}
             <motion.div variants={itemVariants} className="w-full flex justify-center gap-4 mb-6">
-              <Button 
+              <Button
                 className={`flex items-center px-5 py-2 rounded-full ${styles.secondaryBtn} ${styles.font}`}
                 onClick={() => handleSectionChange("projects")}
               >
                 <Code className="mr-2 h-4 w-4" /> My Projects
-              </Button>
-              <Button 
-                className={`flex items-center px-5 py-2 rounded-full ${styles.secondaryBtn} ${styles.font}`}
-                onClick={() => handleSectionChange("blogs")}
-              >
-                <BookOpen className="mr-2 h-4 w-4" /> Read My Blog
               </Button>
             </motion.div>
 

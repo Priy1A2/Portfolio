@@ -7,10 +7,9 @@ import { Button } from "@/components/ui/button"
 import { toast } from "sonner"
 
 const socialLinks = [
-  { icon: TwitterIcon, href: "https://x.com/PixPerk_", label: "Twitter" },
-  { icon: GithubIcon, href: "https://github.com/pixperk", label: "GitHub" },
-  { icon: LinkedinIcon, href: "https://www.linkedin.com/in/yashaswi-kumar-mishra-459a53285/", label: "LinkedIn" },
-  { icon: MailIcon, href: "mailto:mishrayashaswikumar@gmail.com", label: "Email" },
+  { icon: GithubIcon, href: "https://github.com/Priy1A2/Intelligent-ide-1-", label: "GitHub" },
+  { icon: LinkedinIcon, href: "https://www.linkedin.com/in/priya-jain-b4a511283//", label: "LinkedIn" },
+  { icon: MailIcon, href: "mailto:priyajainpj2057@gmail.com", label: "Email" },
 ]
 
 interface FormValues {

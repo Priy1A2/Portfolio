@@ -10,7 +10,7 @@ import ProjectsSection from './sections/ProjectsSection'
 import SkillsSection from './sections/SkillsSection'
 import ExperienceSection from './sections/ExperienceSection'
 import EducationSection from './sections/EducationSection'
-import BlogsSection from './sections/BlogsSection'
+// import BlogsSection from './sections/BlogsSection'
 import ContactSection from './sections/ContactSection'
 import Navigation, { Section } from './Navigation'
 
@@ -65,7 +65,7 @@ export default function Portfolio() {
                   {activeSection === 'skills' && <SkillsSection theme={theme} />}
                   {activeSection === 'experience' && <ExperienceSection theme={theme} />}
                   {activeSection === 'education' && <EducationSection theme={theme} />}
-                  {activeSection === 'blogs' && <BlogsSection theme={theme} />}
+                  {/* {activeSection === 'blogs' && <BlogsSection theme={theme} />} */}
                   {activeSection === 'contact' && <ContactSection theme={theme} />}
                 </div>
               </motion.section>
@@ -78,7 +78,7 @@ export default function Portfolio() {
           theme === 'retro' ? 'font-mono' : 'font-sans'
         }`}
       >
-        © {new Date().getFullYear()} Yashaswi Kumar Mishra. All rights reserved.
+        © {new Date().getFullYear()} Priya Jain. All rights reserved.
       </footer>
     </div>
   )

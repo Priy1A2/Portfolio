@@ -31,7 +31,6 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
     "skills",
     "experience",
     "education",
-    "blogs",
     "contact",
     "latest_project",
     "theme retro",
@@ -94,7 +93,6 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
       case "projects":
       case "experience":
       case "education":
-      case "blogs":
       case "skills":
       case "contact":
         setActiveSection(baseCommand as Section)
@@ -116,8 +114,8 @@ export default function CLI({ theme, setActiveSection, setTheme, setCliMode }: C
         newOutput.push("Downloading resume...")
         setTimeout(() => {
           const link = document.createElement("a")
-          link.href = "/resume.pdf"
-          link.download = "resume.pdf"
+          link.href = "/PriyaJain_IIITP_Resume.pdf"
+          link.download = "PriyaJain_IIITP_Resume.pdf"
           link.click()
           newOutput.push("Resume downloaded successfully!")
           setOutput([...newOutput])

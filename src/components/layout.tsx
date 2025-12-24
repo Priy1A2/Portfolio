@@ -10,7 +10,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
             href="/"
             className="text-2xl font-bold bg-gradient-to-r from-violet-400 via-fuchsia-400 to-indigo-400 bg-clip-text text-transparent"
           >
-            Yashaswi Kumar Mishra
+            Priya Jain
           </Link>
           <div className="flex items-center gap-6">
             <Link href="/blog" className="hover:text-purple-400 transition-colors">
@@ -26,7 +26,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <main>{children}</main>
       <footer className="border-t border-gray-800 mt-20">
         <div className="container mx-auto px-4 py-6 text-center text-gray-400">
-          © {new Date().getFullYear()} Yashaswi Kumar Mishra. All rights reserved.
+          © {new Date().getFullYear()} Priya Jain. All rights reserved.
         </div>
       </footer>
     </div>

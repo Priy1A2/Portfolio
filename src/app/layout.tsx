@@ -6,11 +6,13 @@ import { Toaster } from 'sonner'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Yashaswi Kumar Mishra - Portfolio',
+  title: 'Priya Jain - Portfolio',
   description: 'Full Stack Developer & Tech Enthusiast',
   icons: [{ rel:"icon", url: "/profile.jpg" }],
 }
 
+/*************  ✨ Windsurf Command ⭐  *************/
+/*******  4655c0d0-9f74-472a-84c0-24798c6d1798  *******/
 export default function RootLayout({
   children,
 }: {

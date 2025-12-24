@@ -8,7 +8,7 @@ import { Button } from "@/components/ui/button"
 import { Switch } from "@/components/ui/switch"
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip"
 
-export type Section = "intro" | "projects" | "skills" | "experience" | "education" | "blogs" | "contact"
+export type Section = "intro" | "projects" | "skills" | "experience" | "education" | "contact"
 
 interface NavigationProps {
   activeSection: Section
@@ -25,7 +25,7 @@ const navItems: { title: string; section: Section }[] = [
   { title: "Skills", section: "skills" },
   { title: "Experience", section: "experience" },
   { title: "Education", section: "education" },
-  { title: "Blogs", section: "blogs" },
+  // { title: "Blogs", section: "blogs" },
   { title: "Contact", section: "contact" },
 ]
 
